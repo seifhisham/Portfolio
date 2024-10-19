@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/header";
+import ThemeContextProvider from "@/context/theme-context";
+import ActiveSectionContextProvider, { ActiveSectionContext } from "@/context/active-section-context";
+import ThemeSwitch from "@/components/theme-switch";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
         className={`${geistSans.variable} bg-blue-50 text-blue-700 pt-28 sm:pt-36`}>
         <div className="relative flex flex-wrap items-center justify-center">
@@ -37,8 +41,15 @@ export default function RootLayout({
           sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
         </div>
         
-        <Header />
-        {children}
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Header />
+            {children}
+
+            <ThemeSwitch />
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
+        
       </body>
     </html>
   );
