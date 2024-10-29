@@ -21,7 +21,7 @@ export default function about() {
         Hi, I’m <strong>Seif Hisham</strong>, a dedicated software developer with a strong focus on backend programming and a passion for creating efficient, scalable applications. While I specialize in backend development, I also enjoy designing intuitive frontend interfaces using tools like Figma and crafting sleek, responsive layouts with Tailwind CSS. My commitment to clean, maintainable code ensures that I deliver robust solutions, while solving complex technical challenges is what drives my passion for development.
         </p>
         <p>
-            When I’m not coding, I’m either exploring new tech trends, contributing to open-source projects, or sharpening my problem-solving skills through competitive programming. I’m always eager to learn new technologies and collaborate with fellow developers on exciting projects.
+            When I’m not coding, I’m either exploring new tech trends, contributing to open-source projects, I’m always eager to learn new technologies and collaborate with fellow developers on exciting projects.
         </p>
     </motion.section>
   )
