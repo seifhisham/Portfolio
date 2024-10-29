@@ -1,7 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import gestifyImg from "@/public/gestify.png"
+import gestifyImg from "@/public/Gestify.png"
 import Aqaryimg from "@/public/Aqary.jpg"
 import Bankimg from "@/public/Bank.png"
 
