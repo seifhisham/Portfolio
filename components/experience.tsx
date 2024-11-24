@@ -12,7 +12,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience"); 
+  const { ref } = useSectionInView("Experience", 0.3); 
   const { theme } = useTheme();
 
   return (
@@ -43,9 +43,9 @@ export default function Experience() {
                 transition: "background 0.3s ease",
               }}
             >
-              <h3 className="font-semibold capitalize text-lg text-gray-800 dark:text-white">{item.title}</h3>
-              <p className="font-medium text-gray-600 dark:text-gray-400">{item.location}</p>
-              <p className="text-gray-700 dark:text-gray-300 mt-2 leading-relaxed">{item.description}</p>
+              <h3 className="font-semibold capitalize text-lg text-gray-900 dark:text-gray-100">{item.title}</h3>
+              <p className="font-medium text-gray-700 dark:text-gray-300">{item.location}</p>
+              <p className="!text-gray-700 dark:!text-gray-300 mt-2 leading-relaxed">{item.description}</p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
