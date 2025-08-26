@@ -4,6 +4,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import gestifyImg from "@/public/Gestify.png"
 import Aqaryimg from "@/public/Aqary.jpg"
 import Bankimg from "@/public/Bank.png"
+import FaxSign from "@/public/FaxSign.png"
+import Via from "@/public/Via.png"
 
 export const links = [
   {
@@ -69,26 +71,41 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "GESTIFY",
+    title: "GESTIFY - Laptop Control",
     description:
       "I worked as a full-stack developer on this graduation project for 1 year. Users can control their laptops using hand gestures and face recognition to switch between accounts to change the saved settings.",
-    tags: ["Python", "YOLO V5", "MYSQL", "PyQt5", "CSS"],
+    tags: ["Python", "YOLO V5", "MYSQL"],
     imageUrl: gestifyImg,
   },
   {
-    title: "AQARY",
+    title: "Bank Management System",
+    description:
+      "This is a simple banking website that I made with my team in 3 months, I worked as a backend developer on this project using java spring boot framework.",
+    tags: ["Java", "Spring-Boot", "Html", "CSS", "MicroService"],
+    imageUrl: Bankimg,
+  },
+  {
+    title: "VIA - Admin Management System",
+    description:
+      "A web app that helps businesses manage their admin system and employees and customers and orders and products and more.",
+    tags: ["Next.js", "Xata", "Stripe"],
+    imageUrl: Via,
+  },
+  {
+    title: "AQARY - E-Commerce App",
     description:
       "This project was made in 2 weeks using flutter I worked on it as a full stack developer and added alot of feature into it.",
     tags: ["Flutter", "FireBase", "SQFLite"],
     imageUrl: Aqaryimg,
   },
   {
-    title: "Bank",
+    title: "FaxSign - Digital Fax Management",
     description:
-      "This is a simple banking website that I made with my team in 3 months, I worked as a backend developer on this project using java spring boot framework.",
-    tags: ["Java", "Spring-Boot", "Html", "CSS", "MicroService"],
-    imageUrl: Bankimg,
+      "A web app that helps businesses manage fax documents online. Users can Upload and track faxes Add digital signatures Route documents to different departments View document history.",
+    tags: ["Node.js", "Express", "SQLite"],
+    imageUrl: FaxSign,
   },
+  
 ] as const;
 
 export const skillsData = [
