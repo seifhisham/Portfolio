@@ -12,6 +12,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  liveUrl,
+  githubUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -32,7 +34,7 @@ export default function Project({
     >
       <section className="bg-white dark:bg-gray-800/40 max-w-[42rem] 
         border border-black/5 dark:border-white/5 rounded-lg overflow-hidden 
-        sm:pr-8 relative sm:h-[20rem] 
+        sm:pr-8 relative
         hover:bg-gray-100 dark:hover:bg-gray-700/50 
         transition-colors duration-300
         sm:group-even:pl-8">
@@ -41,7 +43,31 @@ export default function Project({
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-gray-300">
             {description}
           </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+          {(liveUrl || githubUrl) && (
+            <div className="mt-4 mb-2 sm:mb-2 flex flex-wrap gap-3">
+              {liveUrl && (
+                <a
+                  href={liveUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:bg-blue-500 dark:hover:bg-blue-600"
+                >
+                  Demo
+                </a>
+              )}
+              {githubUrl && (
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2 dark:bg-gray-700 dark:hover:bg-gray-800"
+                >
+                  GitHub
+                </a>
+              )}
+            </div>
+          )}
+          <ul className="flex flex-wrap mt-2 gap-2">
             {tags.map((tag, index) => (
               <li
                 className="bg-gray-900 dark:bg-gray-700 px-3 py-1 text-[0.7rem] 
