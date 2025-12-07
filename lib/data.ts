@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import gestifyImg from "@/public/Gestify.png"
 import Aqaryimg from "@/public/Aqary.jpg"
-import Bankimg from "@/public/Bank.png"
+import Adoore from "@/public/Adoore.png"
 import FaxSign from "@/public/FaxSign.png"
 import Via from "@/public/Via.png"
 
@@ -36,10 +36,18 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "FREELANCE SOFTWARE DEVELOPER",
+    location: "Remote",
+    description:
+      "Worked as a freelance developer building full-stack web applications for clients. Delivered projects using technologies like Next.js, Supabase, and other modern web tools, focusing on fast development, clean UI, and reliable backend solutions.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - Present",
+  },
+  {
     title: "GRADUATED WITH A COMPUTER SCIENCE BACHELOR",
     location: "Misr International University",
     description:
-      "I graduated with a 3.38 GPA as a software engnieer and my graduation project was called Gestify which is made to control the laptop using only hand gestures and face detection for more features.",
+      "I graduated with a 3.38 GPA as a software engineer and my graduation project was called Gestify which is made to control the laptop using only hand gestures and face detection for more features.",
     icon: React.createElement(LuGraduationCap),
     date: "2019 - 2024",
   },
@@ -76,13 +84,17 @@ export const projectsData = [
       "I worked as a full-stack developer on this graduation project for 1 year. Users can control their laptops using hand gestures and face recognition to switch between accounts to change the saved settings.",
     tags: ["Python", "YOLO V5", "MYSQL"],
     imageUrl: gestifyImg,
+    liveUrl: "https://youtu.be/ySvdqMFAkds?si=lrfdqssig-1CQJFJ",
+    githubUrl: "https://github.com/seifhisham/TouchPoint-Detection-Advancements-in-Projector-Camera-HCI",
   },
   {
-    title: "Bank Management System",
+    title: "ADOORE - Clothing E-Commerce App With Admin Dashboard",
     description:
-      "This is a simple banking website that I made with my team in 3 months, I worked as a backend developer on this project using java spring boot framework.",
-    tags: ["Java", "Spring-Boot", "Html", "CSS", "MicroService"],
-    imageUrl: Bankimg,
+      "This is a clothing e-commerce website that I built using Next.js, Supabase, and Resend. It includes a full admin dashboard for managing products, orders, and customers.",
+    tags: ["Next.js", "Supabase", "Resend"],
+    imageUrl: Adoore,
+    liveUrl: "https://adoore.com.co",
+    githubUrl: "https://github.com/seifhisham/e-store",
   },
   {
     title: "VIA - Admin Management System",
@@ -90,6 +102,8 @@ export const projectsData = [
       "A web app that helps businesses manage their admin system and employees and customers and orders and products and more.",
     tags: ["Next.js", "Xata", "Stripe"],
     imageUrl: Via,
+    liveUrl: "https://app.viacontractors.co.uk/",
+    githubUrl: "https://github.com/seifhisham/via",
   },
   {
     title: "AQARY - E-Commerce App",
@@ -97,6 +111,8 @@ export const projectsData = [
       "This project was made in 2 weeks using flutter I worked on it as a full stack developer and added alot of feature into it.",
     tags: ["Flutter", "FireBase", "SQFLite"],
     imageUrl: Aqaryimg,
+    liveUrl: "https://www.figma.com/proto/N9we0KQ6iTbMV2JxEJuRr5/Aqary?node-id=0-1&t=HQ9YiMLLgphIj7vU-1",
+    githubUrl: "https://github.com/ahmedemad2222/Aqary",
   },
   {
     title: "FaxSign - Digital Fax Management",
@@ -104,6 +120,8 @@ export const projectsData = [
       "A web app that helps businesses manage fax documents online. Users can Upload and track faxes Add digital signatures Route documents to different departments View document history.",
     tags: ["Node.js", "Express", "SQLite"],
     imageUrl: FaxSign,
+    liveUrl: "https://github.com/seifhisham/faxsign",
+    githubUrl: "https://github.com/seifhisham/faxsign",
   },
   
 ] as const;
