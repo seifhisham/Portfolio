@@ -41,13 +41,13 @@ export const experiencesData = [
     description:
       "Worked as a freelance developer building full-stack web applications for clients. Delivered projects using technologies like Next.js, Supabase, and other modern web tools, focusing on fast development, clean UI, and reliable backend solutions.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - Present",
+    date: "2024 - Present",
   },
   {
     title: "GRADUATED WITH A COMPUTER SCIENCE BACHELOR",
     location: "Misr International University",
     description:
-      "I graduated with a 3.38 GPA as a software engineer and my graduation project was called Gestify which is made to control the laptop using only hand gestures and face detection for more features.",
+      "I graduated with a 2.38 GPA as a software engineer and my graduation project was called Gestify which is made to control the laptop using only hand gestures and face detection for more features.",
     icon: React.createElement(LuGraduationCap),
     date: "2019 - 2024",
   },
