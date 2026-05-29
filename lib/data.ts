@@ -6,6 +6,7 @@ import Aqaryimg from "@/public/Aqary.jpg"
 import Adoore from "@/public/Adoore.png"
 import FaxSign from "@/public/FaxSign.png"
 import Via from "@/public/Via.png"
+import RideyImg from "@/public/Ridey.png";
 
 export const links = [
   {
@@ -36,18 +37,26 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "FLUTTER DEVELOPER",
+    location: "Develop Network (Cairo, Egypt)",
+    description:
+      "Sole developer responsible for end-to-end development of Ridey, a production ride-sharing app on iOS and Android. I manage the full app lifecycle, maintain high-traffic real estate apps (Market Standard), and integrate complex features like Paymob, GPS tracking, and marketing analytics (Meta CAPI).",
+    icon: React.createElement(CgWorkAlt),
+    date: "Apr 2026 - Present",
+  },
+  {
     title: "FREELANCE SOFTWARE DEVELOPER",
     location: "Remote",
     description:
-      "Worked as a freelance developer building full-stack web applications for clients. Delivered projects using technologies like Next.js, Supabase, and other modern web tools, focusing on fast development, clean UI, and reliable backend solutions.",
+      "Building full-stack web and mobile solutions for international clients. Focused on Next.js, Flutter, and Supabase to deliver robust ERP systems and e-commerce platforms with custom admin dashboards.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - Present",
+    date: "2024 - Present",
   },
   {
     title: "GRADUATED WITH A COMPUTER SCIENCE BACHELOR",
     location: "Misr International University",
     description:
-      "I graduated with a 3.38 GPA as a software engineer and my graduation project was called Gestify which is made to control the laptop using only hand gestures and face detection for more features.",
+      "I graduated with a 2.38 GPA as a software engineer and my graduation project was called Gestify which is made to control the laptop using only hand gestures and face detection for more features.",
     icon: React.createElement(LuGraduationCap),
     date: "2019 - 2024",
   },
@@ -78,6 +87,15 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "RIDEY - Production Ride-Sharing",
+    description:
+      "A live car rental platform on iOS and Android. I handle everything from UI and business logic to FCM notifications, Google Maps integration, and live store maintenance.",
+    tags: ["Flutter", "Firebase", "Google Maps API", "Paymob","Stripe", "FCM" ],
+    imageUrl: RideyImg,
+    liveUrl: "http://rideyapp.com/", // Replace with your actual store link
+    githubUrl: "https://github.com/Easyschools/ridey-flutter",
+  },
   {
     title: "GESTIFY - Laptop Control",
     description:
@@ -127,22 +145,23 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "C++",
-  "C#",
-  "Java",
-  "Spring Boot",
-  "Python",
-  "HTML",
-  "CSS",
-  "PHP",
+  "Dart",
   "Flutter",
-  "ASP.NET",
   "JavaScript",
   "TypeScript",
-  "React",
   "Next.js",
-  "Larvel",
+  "React",
+  "Python",
+  "SQL",
+  "C++",
+  "Supabase",
+  "Firebase",
   "Tailwind",
-  "MySQL",
-  "Framer Motion",
+  "GitHub Actions",
+  "Jira",
+  "Meta CAPI",
+  "Paymob",
+  "Stripe",
+  "FCM",
+  "Google Maps API",
 ] as const;
